@@ -2,7 +2,7 @@ create table livro(
     isbn int primary key,
     nome varchar(100),
     genero varchar(100),
-    ano int
+    ano int,
     cod_autor int,
     foreign key(cod_autor) references autor(cod_autor)
 );
