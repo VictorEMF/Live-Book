@@ -1,11 +1,93 @@
 create table cliente(
     cod_cliente int primary key,
     nome varchar(100),
-    idade int,
+    idade date,
     sexo char(1),
     bairro varchar(100)
 );
 
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (1, 'Jessee Studholme', '1973-07-14', 'M', 'Santo Antônio');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (2, 'Ruthie Fludder', '2001-05-09', 'F', 'Santa Isabel');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (3, 'Sianna Stirley', '1980-12-22', 'M', 'Campos Elíseos');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (4, 'Jarrad Oubridge', '1942-01-19', 'F', 'Olavo Bilac');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (5, 'Kort Hutchinson', '2005-04-12', 'F', 'Olavo Bilac');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (6, 'Dominik Foxwell', '1950-06-30', 'M', 'Vila Guanabara');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (7, 'Gordie Grovier', '1998-09-16', 'M', 'Santo Antônio');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (8, 'Phineas Knevet', '2007-02-28', 'F', 'Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (9, 'Melodie Egdell', '2006-11-02', 'M', 'Vila Ideal');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (10, 'Sybil Kamiyama', '1947-03-5', 'M', 'Campos Elíseos');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (11, 'Quinn Threadgould', '1979-10-27', 'M', 'Loteamento Cachoeira');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (12, 'Dana Brownsill', '1985-05-15', 'M', 'Jardim Primavera');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (13, 'Idalina Nisius', '1968-10-14', 'M', 'Vila São Sebastião');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (14, 'Pat Henkmann', '1943-05-23', 'F', 'Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (15, 'Cori Nother', '1964-01-26', 'M', 'Vila Guanabara');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (16, 'Candra Gleeton', '1977-02-13', 'M', 'Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (17, 'Osmund Howells','2005-06-08', 'M', 'Vila Ideal');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (18, 'Robinette Beardwood', '2004-08-11', 'F', 'Capivari');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (19, 'Sharona Antyukhin', '1955-09-13', 'F', 'Parque Boa Vista I');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (20, 'Dorotea Blanch', '1989-03-09', 'M', 'Cangulo');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (21, 'Myranda Slimme', '1977-04-30', 'M', 'Parque Beira Mar');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (22, 'Stefa Scutching', '1954-01-05', 'F', 'Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (23, 'Gibb Tuckie', '1998-12-28', 'F', 'Parque Boa Vista I');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (24, 'Romeo Westnedge', '1951-05-03', 'F', 'Vila Guanabara');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (25, 'Con Richmond', '1986-11-28', 'F', 'Campos Elíseos');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (26, 'Chicky Kamien', '1997-02-11', 'F', 'Campos Elíseos');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (27, 'Pippy McGiff', '1968-09-28', 'M', 'Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (28, 'Lelah Doghartie', '1956-07-24', 'F', 'Santa Isabel');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (29, 'Noble Panting', '1981-03-27', 'M', 'Vila São Sebastião');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (30, 'Abby Wabey', '1998-09-09', 'M', 'Campos Elíseos');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (31, 'Worthington Balassi', '1937-11-12', 'M', 'Santo Antônio');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (32, 'Stanley Bowerbank', '2010-05-30', 'F', 'Cangulo');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (33, 'Cissiee Dove', '1994-08-06', 'M', 'Loteamento Cachoeira');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (34, 'Inge Edwinson', '1966-01-22', 'M', 'Fonseca');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (35, 'Marijn Sambeck', '1998-11-21', 'F', 'Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (36, 'Stinky Gittoes', '1963-06-18', 'M', 'Engenho do Porto');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (37, 'Caesar Itshak', '1979-09-04', 'M', 'Olavo Bilac');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (38, 'Marleen Joysey', '1952-04-25', 'M', 'Parque Bom Retiro');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (39, 'Ada Nevison', '2008-12-17', 'M', 'Parque Beira Mar');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (40, 'Adolph Boake', '1972-04-21', 'M', 'Engenho do Porto');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (41, 'Frannie Corryer', '1979-09-11', 'F', 'Santa Isabel');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (42, 'Jonie Armsby', '1981-04-26', 'F', 'Loteamento Quinze');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (43, 'Marmaduke Guilfoyle', '1961-06-07', 'M', 'Vila Ideal');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (44, 'Gabby Allner', '1998-08-08', 'F', 'Jardim Primavera');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (45, 'Moss Mildenhall', '1958-12-03', 'F', 'Olavo Bilac');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (46, 'Gustavo Ralston', '2012-12-12', 'M', 'Fonseca');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (47, 'Raine Wyche', '1973-09-03', 'F', 'Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (48, 'Dav Bruniges', '1941-06-27', 'M', 'Vila São Sebastião');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (49, 'Em Frill', '1949-04-14', 'M', 'Vila Ideal');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (50, 'Crysta Linnemann', '1937-02-19', 'F', 'Fonseca');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (51, 'Claudette Fitzjohn', '1998-05-09', 'F', 'Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (52, 'Frants Gummie', '1959-01-20', 'M', 'Fonseca');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (53, 'Desdemona Springthorp', '1981-11-30', 'F', 'Cangulo');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (54, 'Winnie Nethercott', '1957-06-01', 'M', 'Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (55, 'Jeddy Valentin', '2003-03-03', 'M', 'Jardim Primavera');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (56, 'Urbanus Toulch', '1971-04-15', 'M', 'Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (57, 'Christian Macquire', '1983-06-05', 'M', 'Santa Lúcia');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (58, 'Raoul Tremblot', '2005-05-05', 'F', 'Olavo Bilac');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (59, 'Adolpho Lammers', '1956-03-09', 'F', 'Capivari');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (60, 'Viviyan Norvell', '1964-08-16', 'F', 'Engenho do Porto');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (61, 'Valery Estcourt', '1979-03-20', 'F', 'Vila Guanabara');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (62, 'Wendel Kaasmann','1965-10-21','M','Capivari');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (63, 'Micky Mair','2010-05-01','F','Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (64, 'Christoper Fouldes','2007-10-20','F','Fonseca');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (65, 'Chris Robertacci','2004-03-21','F','Vila Irene');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (66, 'Annelise McGrah','2006-05-20','F','Fonseca');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (67, 'Leon Tuttiett','1983-10-19','F','Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (68, 'Petey Yorkston','1940-07-28','M','Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (69, 'Clevey Rendbaek','2012-06-17','F','Santa Lúcia');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (70, 'Rafael Tortice','1980-12-20','F','Vila Irene');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (71, 'Addison Bartosik','1990-01-22','F','Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (72, 'Meaghan Wolfendell','1985-05-12','F','Vila Irene');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (73, 'Gwenora Grier','1997-07-20','M','Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (74, 'Domenic Grisbrook','1992-10-28','F','Loteamento Cachoeira');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (75, 'Allyn Parlett','1982-02-21','F','Jardim Primavera');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (76, 'Onofredo Bontine','1960-07-21','M','Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (77, 'Tarra Yon','1956-12-01','F','Vila Irene');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (78, 'Kristoforo Tessier','1970-01-23','M','Engenho do Porto');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (79, 'Nelie Tenant','1976-10-12','M','Nova Campinas');
+insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (80, 'Eric Mattiazzi','1988-04-23','M','Santa Lúcia');
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (1, 'Jessee Studholme', 49, 'M', 'Santo Antônio');
 insert into cliente (cod_cliente, nome, idade, sexo, bairro) values (2, 'Ruthie Fludder', 21, 'F', 'Santa Isabel');
