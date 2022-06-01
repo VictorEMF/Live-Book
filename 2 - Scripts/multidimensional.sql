@@ -1,45 +1,33 @@
-
-CREATE TABLE public.dim_autor (
-                sk_autor INTEGER NOT NULL,
-                nk_autor INTEGER NOT NULL,
-                nm_autor VARCHAR(60) NOT NULL,
-                pais VARCHAR(70) NOT NULL,
-                elt_versao INTEGER NOT NULL,
-                etl_dt_inicio DATE NOT NULL,
-                elt_dt_fim DATE NOT NULL,
-                CONSTRAINT dim_autor_pk PRIMARY KEY (sk_autor)
+create table dim_data (
+    sk_data integer not null,
+    nk_data date not null,
+    desc_data_completa varchar(60) not null,
+    nr_ano integer not null,
+    nm_trimestre varchar(20) not null,
+    nr_ano_trimestre varchar(20) not null,
+    nr_mes integer not null,
+    nm_mes varchar(20) not null,
+    ano_mes varchar(20) not null,
+    nr_semana integer not null,
+    ano_semana varchar(20) not null,
+    nr_dia integer not null,
+    nr_dia_ano integer not null,
+    nm_dia_semana varchar(20) not null,
+    flag_final_semana char(3) not null,
+    flag_feriado char(3) not null,
+    nm_feriado varchar(60) not null,
+    etl_dt_inicio timestamp not null,
+    etl_dt_fim timestamp not null,
+    versao integer not null,
+    constraint sk_data_pk primary key (sk_data)
 );
 
-
-CREATE TABLE public.dim_data (
-                sk_data INTEGER NOT NULL,
-                nk_data DATE NOT NULL,
-                desc_data_completa VARCHAR(60) NOT NULL,
-                nr_ano INTEGER NOT NULL,
-                nm_trimestre VARCHAR(20) NOT NULL,
-                nr_ano_trimestre VARCHAR(20) NOT NULL,
-                nr_mes INTEGER NOT NULL,
-                nm_mes VARCHAR(20) NOT NULL,
-                ano_mes VARCHAR(20) NOT NULL,
-                nr_semana INTEGER NOT NULL,
-                ano_semana VARCHAR(20) NOT NULL,
-                nr_dia INTEGER NOT NULL,
-                nr_dia_ano INTEGER NOT NULL,
-                nm_dia_semana VARCHAR(20) NOT NULL,
-                flag_final_semana CHAR(3) NOT NULL,
-                flag_feriado CHAR(3) NOT NULL,
-                nm_feriado VARCHAR(60) NOT NULL,
-                etl_dt_inicio TIMESTAMP NOT NULL,
-                etl_dt_fim TIMESTAMP NOT NULL,
-                versao INTEGER NOT NULL,
-                CONSTRAINT sk_data_pk PRIMARY KEY (sk_data)
-);
 
 
 CREATE TABLE public.dim_livro (
                 sk_livro INTEGER NOT NULL,
-                sk_autor INTEGER NOT NULL,
                 nk_livro INTEGER NOT NULL,
+                nm_autor VARCHAR(100) NOT NULL,
                 nm_livro VARCHAR NOT NULL,
                 genero VARCHAR(50) NOT NULL,
                 ano INTEGER NOT NULL,
@@ -65,8 +53,8 @@ CREATE TABLE public.dim_avaliacao (
 CREATE TABLE public.dim_cliente (
                 sk_cliente INTEGER NOT NULL,
                 nk_cliente INTEGER NOT NULL,
-                nm_cliente VARCHAR(50) NOT NULL,
-                idade INTEGER NOT NULL,
+                nm_cliente VARCHAR(100) NOT NULL,
+                idade DATE NOT NULL,
                 sexo CHAR(1) NOT NULL,
                 bairro VARCHAR(60) NOT NULL,
                 elt_versao INTEGER NOT NULL,
@@ -80,16 +68,10 @@ CREATE TABLE public.ft_locacao (
                 sk_data INTEGER NOT NULL,
                 sk_cliente INTEGER NOT NULL,
                 sk_livro INTEGER NOT NULL,
-                sk_avaliacao INTEGER NOT NULL
+                sk_avaliacao INTEGER NOT NULL,
+                data_locacao DATE NOT NULL
 );
 
-
-ALTER TABLE public.dim_livro ADD CONSTRAINT dim_autor_dim_livro_fk
-FOREIGN KEY (sk_autor)
-REFERENCES public.dim_autor (sk_autor)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
 
 ALTER TABLE public.ft_locacao ADD CONSTRAINT dim_data_ft_locacao_fk
 FOREIGN KEY (sk_data)
