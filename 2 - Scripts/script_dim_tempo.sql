@@ -61,7 +61,7 @@ current_timestamp as data_carga,
 '1'
 from (
 ---incluir aqui a data de início do script, criaremos 15 anos de datas
-select '2020-01-01'::date + sequence.day as datum
+select '2018-01-01'::date + sequence.day as datum
 from generate_series(0,5479) as sequence(day)
 group by sequence.day
 ) dq
